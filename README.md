@@ -2,8 +2,8 @@
 JavaScript高级程序设计(第3版) 读书笔记
 
 ## 目录
-- [第1章](/chapter 1.md)
-- [第2章](/chapter 2.md)
+- [第1章](/chapter%201.md)
+- [第2章](/chapter%202.md)
 - [第3章 基本概念](/chapter%203.md#第3章-基本概念)
   - [3.1 语法](/chapter%203.md#31-语法)
     - [3.1.1 区分大小写](/chapter%203.md#311-区分大小写)
@@ -71,8 +71,8 @@ JavaScript高级程序设计(第3版) 读书笔记
   - [3.7 函数](/chapter%203.md#37-函数)
     - [3.7.1 理解参数](/chapter%203.md#371-理解参数)
     - [3.7.2 没有重载](/chapter%203.md#372-没有重载)
-- [第4章](/chapter-4.md)
-- [第5章](/chapter-5.md)
-- [第6章](/chapter-6.md)
-- [第7章](/chapter-7.md)
-- [第8章](/chapter-8.md)
+- [第4章](/chapter%204.md)
+- [第5章](/chapter%205.md)
+- [第6章](/chapter%206.md)
+- [第7章](/chapter%207.md)
+- [第8章](/chapter%208.md)
