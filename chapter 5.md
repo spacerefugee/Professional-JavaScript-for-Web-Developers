@@ -193,7 +193,7 @@ var expression = / pattern / flags ;
 ###### 9. HTML方法
 - 尽量不要使用这些方法。
 
-#### 5.7单体内置对象
+#### 5.7 单体内置对象
 - 由ECMAScript实现提供的、不依赖于宿主环境对象，这些对象在ECMAScript程序执行之前就已经存在了。例如Object、Array和String还有Global和Math。
 
 ##### 5.7.1 Global对象
