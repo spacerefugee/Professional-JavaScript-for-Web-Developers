@@ -86,8 +86,26 @@ JavaScript高级程序设计(第3版) 读书笔记
   - [3.7.1 理解参数](/chapter%203.md#371-理解参数)
   - [3.7.2 没有重载](/chapter%203.md#372-没有重载)
 </details>
+<details>
+<summary>第4章 变量、作用域和内存问题</summary>
+  
+- [4.1 基本类型和引用类型的值](/chapter%204.md#41-基本类型和引用类型的值)
+  - [4.1.1 动态的属性](/chapter%204.md#411-动态的属性)
+  - [4.1.2 复制变量值](/chapter%204.md#412-复制变量值)
+  - [4.1.3 传递参数](/chapter%204.md#413-传递参数)
+  - [4.1.4 检测类型](/chapter%204.md#414-检测类型)
+- [4.2 执行环境及作用域](/chapter%204.md#42-执行环境及作用域)
+  - [.2.1 延长作用域链](/chapter%204.md#421-延长作用域链)
+  - [4.2.2 没有块级作用域](/chapter%204.md#422-没有块级作用域)
+    - [声明变量](/chapter%204.md#1-声明变量)
+    - [查询标识](/chapter%204.md#2-查询标识)
+- [4.3 垃圾收集](/chapter%204.md#43-垃圾收集)
+  - [4.3.1 标记清除(mark-and-sweep)](/chapter%204.md#431-标记清除mark-and-sweep)
+  - [4.3.2 引用计数(reference counting)](/chapter%204.md#432-引用计数reference-counting)
+  - [4.3.3 性能问题](/chapter%204.md#4.33-性能问题)
+  - [4.3.4 管理内存](/chapter%204.md#4.34-管理内存)
+</details>
 
-- [第4章](/chapter%204.md)
 - [第5章](/chapter%205.md)
 - [第6章](/chapter%206.md)
 - [第7章](/chapter%207.md)
