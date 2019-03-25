@@ -2,8 +2,8 @@
 JavaScript高级程序设计(第3版) 读书笔记
 
 ## 目录
-- [第1章](/chapter-1.md)
-- [第2章](/chapter-2.md)
+- [第1章](/chapter 1.md)
+- [第2章](/chapter 2.md)
 - [第3章 基本概念](/chapter%203.md#第3章-基本概念)
   - [3.1 语法](/chapter%203.md#31-语法)
     - [3.1.1 区分大小写](/chapter%203.md#311-区分大小写)
