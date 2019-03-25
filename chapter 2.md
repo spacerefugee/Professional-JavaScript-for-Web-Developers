@@ -1,7 +1,7 @@
 ### 第2章 在HTML中使用JavaScript
 #### 2.1 <script>元素
 - 使用<script>元素向HTML页面插入JavaScript。
--  <script>标签6个属性：
+- \<script\>标签6个属性：
   - 1.async：可选属性，立即下载脚本
   - 2.charset：可选属性，表示通过src属性指定的代码的字符集，大多数浏览器会忽略，所以很少人使用
   - 3.defer：可选属性，脚本延迟到文档完全被解析和显示之后再执行
