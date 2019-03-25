@@ -2,17 +2,29 @@
 JavaScript高级程序设计(第3版) 读书笔记
 
 ## 目录
-- [第1章](/chapter%201.md)
-- [第2章](/chapter%202.md)
+<details>
+<summary>第1章 JavaScript简介</summary>
+
+- [1.1 JavaScript简史](/chapter%201.md#11-JavaScript简史)
+- [1.2 JavaScript实现](/chapter%201.md#12-JavaScript实现)
+- [1.3 JavaScript版本](/chapter%201.md#13-JavaScript版本)
+</details>
+<details>
+<summary>第2章 在HTML中使用JavaScript</summary>
+  
+- [2.1 <script>元素](/chapter%202.md#21-script元素)
+- [2.2 文档模式](/chapter%202.md#22-文档模式)
+- [2.3 元素](/chapter%202.md#23-元素)
+</details>
 <details>
 <summary>第3章 基本概念</summary>
 
-  - [3.1 语法](/chapter%203.md#31-语法)
+- [3.1 语法](/chapter%203.md#31-语法)
   - [3.1.1 区分大小写](/chapter%203.md#311-区分大小写)
   - [3.1.2 标识符](/chapter%203.md#312-标识符)
   - [3.1.3 注释](/chapter%203.md#313-注释)
- [3.1.4 严格模式](/chapter%203.md#314-严格模式)
- [3.1.5 语句](/chapter%203.md#315-语句)
+  - [3.1.4 严格模式](/chapter%203.md#314-严格模式)
+  - [3.1.5 语句](/chapter%203.md#315-语句)
 - [3.2 关键字和保留字](/chapter%203.md#32-关键字和保留字)
 - [3.3 变量](/chapter%203.md#33-变量)
 - [3.4 数据类型](/chapter%203.md#34-数据类型)
