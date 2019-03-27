@@ -373,5 +373,91 @@ alert(instance.age); // 29
 - 因为以上问题，借用构造函数的技术也是很少单独使用的。
 
 ##### 6.3.3 组合继承
-- 组合继承(combination inheritance)，有时候也叫做伪经典继承，指的是将原型链和借用构造函数的技术组合到一块，从而发挥二者之长的一种继承模式。
+- 组合继承(combination inheritance)，有时候也叫做伪经典继承，指的是将原型链和借用构造函数的技术组合到一块，从而发挥二者之长的一种继承模式。其背后的思路是使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。
 
+```javascript
+function SuperType(name) {
+    this.name = name;
+    this.colors = [{"red", "blue", "green"}];
+}
+SuperType.prototype.sayName = function() {
+    alert(this.name);
+};
+function SubType(name, age) {
+    // 继承属性
+    SuperType.call(this.name);
+    this.age = age;
+}
+// 继承方法
+SubType.prototype = new SuperType();
+SubType.prototype.sayAge = function() {
+    alert(this.age);
+};
+
+var instance1 = new SubType("Nicholas", 29);
+instance1.colors.push("black");
+alert(instance1.colors); // "red,blue,green,black"
+instance1.sayName(); // "Nicholas"
+instance1.sayAge(); // 29
+
+var instance2 = new SubType("Greg", 27);
+alert(instance2.colors); // "red,blue,green"
+instance2.sayName(); // "Greg"
+instance2.sayAge(); // 27
+```
+- 组合继承避免了原型链和借用构造函数的缺陷，融合了它们的有点，成为JavaScript中最常用的继承模式。而且，instanceof和isPrototypeOf()也能够用于识别基于组合继承创建的对象。
+
+##### 6.3.4 原型式继承
+- 原型式继承这种方法并没有使用严格意义上的构造函数。
+- ECMAScript5通过新增Object.create()方法规范化了原型式继承。这个方法接收两个参数：一个用作新对象原型的对象和（可选的）一个为新对象定义额外属性的对象。
+
+```javascript
+var person = {
+    name : "Nicholas",
+    friends : ["Shelby", "Court", "Van"]
+};
+
+var anotherPerson = Object.create(person);
+anotherPerson.name = "Greg";
+anotherPerson.friends.push("Rob");
+
+var yetAnotherPerson = Object.create(person);
+yetAnotherPerson.name = "Linda";
+yetAnotherPerson.friends.push("Barbie");
+
+alert(person.friends); // "Shelby,Court,Van,Rob,Barbie"
+```
+- 在没有必要兴师动众地创建构造函数，而指向让一个对象与另一个对象保持类似的情况下，原型式继承是完全可以胜任的。不过别忘了，包含引用类型值的属性始终都会共享相应的值，就像使用原型模式一样。
+
+##### 6.3.5 寄生式继承
+- 寄生式(parastic)继承的思路与寄生构造函数和工厂模式类似，即创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象，最后再像真的是他做了所有工作一样返回对象。
+
+```javascript
+function createAnother(original) {
+    var clone = object(original); // 通过调用函数创建一个新对象
+    clone.sayHi = function() { // 以某种方式来增强这个对象
+        alert("Hi!");
+    };
+    return clone; // 返回这个对象
+}
+var person = {
+    name : "Nicholas",
+    friends : ["Shelby", "Court", "Van"]
+}
+var anotherPerson = createAnother(person);
+anotherPerson.sayHi(); // "Hi!"
+```
+- 在主要考虑对象而不是自定义类型和构造函数的情况下，寄生式继承也是一种有用的模式。前面示范继承模式时使用的object()函数不是必须的，任何能够返回新对象的函数都适用于此模式。
+- 使用寄生式继承来为对象添加函数，会由于不能做到函数复用而降低效率，这一点与构造函数模式类似。
+
+##### 6.3.6 寄生组合式继承
+- 所谓寄生组合式继承，即通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。其背后的基本思路是：不必为了指定子类型的原型而调用超类型的构造函数，我们所需要的无非就是超类型的原型的一个副本而已。本质上，就是使用寄生式继承来继承超类型的原型，然后再将结果指定给子类型的原型。
+
+```javascript
+function inheritPrototype(subType, superType) {
+    var prototype = object(superType.prototype); // 创建对象
+    prototype.consructor = subType; // 增强对象
+    subType.prototype = prototype; // 指定对象
+}
+```
+- 这个示例中的inheritPrototype()函数实现了寄生组合式继承的最简单形式。这个函数接收两个参数：子类型构造函数和超类型构造函数。在函数内部，第一步是创建超类型的一个副本。第二步是为创建的副本添加constructor属性，从而弥补因重写原型而失去的默认的constructor属性。最后一步，将新创建的对象（即副本）赋值给子类型的原型。
