@@ -193,7 +193,7 @@ location.reload(); // 重新加载（有可能从缓存中加载）
 location.reload(true); // 重新加载（从服务器重新加载）
 ```
 
-#### navigator对象
+#### 8.3 navigator对象
 - 每个浏览器中的navigator对象都有一套自己的属性。
 
 ##### 8.3.1 检测插件
