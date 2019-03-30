@@ -213,4 +213,27 @@ JavaScript高级程序设计(第3版) 读书笔记
   - [7.4.2 模块模式](/chapter%207.md#742-模块模式)
   - [7.4.3 增强的模块模式](/chapter%207.md#743-增强的模块模式)
 </details>
+<details>
+<summary>第8章 BOM</summary>
+
+- [8.1 window对象](/chapter%208.md#81-window对象)
+  - [8.1.1 全局作用域](/chapter%208.md#811-全局作用域)
+  - [8.1.2 窗口关系及框架](/chapter%208.md#812-窗口关系及框架)
+  - [8.1.3 窗口位置](/chapter%208.md#813-窗口位置)
+  - [8.1.4 窗口大小](/chapter%208.md#814-窗口大小)
+  - [8.1.5 导航打开窗口](/chapter%208.md#815-导航打开窗口)
+    - [1. 弹出窗口](/chapter%208.md#1-弹出窗口)
+    - [2. 安全限制](/chapter%208.md#2-安全限制)
+    - [3. 弹出窗口屏蔽程序](/chapter%208.md#3-弹出窗口屏蔽程序)
+  - [8.1.6 间歇调用和超时调用](/chapter%208.md#816-间歇调用和超时调用)
+  - [8.1.7 系统对话框](/chapter%208.md#817-系统对话框)
+- [8.2 location对象](/chapter%208.md#82-location对象)
+  - [8.2.1 查询字符串参数](/chapter%208.md#821-查询字符串参数)
+  - [8.2.2 位置操作](/chapter%208.md#8.22-位置操作)
+- [8.3 navigator对象](/chapter%208.md#83-navigator对象)
+  - [8.3.1 检测插件](/chapter%208.md#831-检测插件)
+  - [8.3.2 注册处理程序](/chapter%208.md#832-注册处理程序)
+- [8.4 screen对象](/chapter%208.md#84-screen对象)
+- [8.5 history对象](/chapter%208.md#85-history对象)
+</details>)
 
