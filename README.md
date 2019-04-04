@@ -11,7 +11,7 @@ JavaScript高级程序设计(第3版) 读书笔记
 </details>
 <details>
 <summary>第2章 在HTML中使用JavaScript</summary>
-  
+
 - [2.1 <script>元素](/chapter%2002.md#21-script元素)
 - [2.2 文档模式](/chapter%2002.md#22-文档模式)
 - [2.3 元素](/chapter%2002.md#23-元素)
@@ -88,7 +88,7 @@ JavaScript高级程序设计(第3版) 读书笔记
 </details>
 <details>
 <summary>第4章 变量、作用域和内存问题</summary>
-  
+
 - [4.1 基本类型和引用类型的值](/chapter%2004.md#41-基本类型和引用类型的值)
   - [4.1.1 动态的属性](/chapter%2004.md#411-动态的属性)
   - [4.1.2 复制变量值](/chapter%2004.md#412-复制变量值)
@@ -107,7 +107,7 @@ JavaScript高级程序设计(第3版) 读书笔记
 </details>
 <details>
 <summary>第5章 引用类型</summary>
-  
+
 - [5.1 Object类型](/chapter%2005.md#51-Object类型)
 - [5.2 Array类型](/chapter%2005.md#52-Array类型)
   - [5.2.1 检测数组](/chapter%2005.md#521-检测数组)
@@ -162,7 +162,7 @@ JavaScript高级程序设计(第3版) 读书笔记
 </details>
 <details>
 <summary>第6章 面向对象的程序设计</summary>
-  
+
 - [6.1 理解对象](/chapter%2006.md#61-理解对象)
   - [6.1.1 属性类型](/chapter%2006.md#611-属性类型)
     - [1. 数据属性](/chapter%2006.md#1数据属性)
@@ -286,3 +286,38 @@ JavaScript高级程序设计(第3版) 读书笔记
   - [10.2.3 操作表格](/chapter%2010.md#1023-操作表格)
   - [10.2.4 使用NodeList](/chapter%2010.md#1024-使用NodeList)
 </details>
+<details>
+<summary>第11章 DOM扩展</summary>
+
+- [11.1 选择符API](/chapter%2011.md#111-选择符API)
+  - [11.1.1 querySelector()方法](/chapter%2011.md#1111-querySelector方法)
+  - [11.1.2 querySelectorAll()方法](/chapter%2011.md#1112-querySelectorAll方法)
+  - [11.1.3 matchesSelector()方法](/chapter%2011.md#1113-matchesSelector方法)
+- [11.2 元素遍历](/chapter%2011.md#112-元素遍历)
+- [11.3 HTML5](/chapter%2011.md#113-HTML5)
+  - [11.3.1 与类相关的扩充](/chapter%2011.md#1131-与类相关的扩充)
+    - [1. getElementsByClassName()方法](/chapter%2011.md#1-getElementsByClassName方法)
+    - [2. classList属性](/chapter%2011.md#2-classList属性)
+  - [11.3.2 焦点管理](/chapter%2011.md#1132-焦点管理)
+  - [11.3.3 HTMLDocument的变化](/chapter%2011.md#1133-HTMLDocument的变化)
+    - [1. readyState属性](/chapter%2011.md#1-readyState属性)
+    - [2. 兼容模式](/chapter%2011.md#2-兼容模式)
+    - [3. head属性](/chapter%2011.md#3-head属性)
+  - [11.3.4 字符集属性](/chapter%2011.md#1134-字符集属性)
+  - [11.3.5 自定义数据属性](/chapter%2011.md#1135-自定义数据属性)
+  - [11.3.6 插入标记](/chapter%2011.md#1136-插入标记)
+    - [1. innerHTML属性](/chapter%2011.md#1-innerHTML属性)
+    - [2. outerHTML属性](/chapter%2011.md#2-outerHTML属性)
+    - [3. insertAdjacentHTML()方法](/chapter%2011.md#3-insertAdjacentHTML方法)
+    - [4. 内存与性能问题](/chapter%2011.md#4. 内存与性能问题)
+  - [11.3.7 scrollIntoView()方法](/chapter%2011.md#1137-scrollIntoView方法)
+- [11.4 专有扩展](/chapter%2011.md#114-专有扩展)
+  - [11.4.1 文档模式](/chapter%2011.md#1141-文档模式)
+  - [11.4.2 children属性](/chapter%2011.md#1142-children属性)
+  - [11.4.3 contains()方法](/chapter%2011.md#1143-contains方法)
+  - [11.4.4 插入文本](/chapter%2011.md#1144-插入文本)
+    - [1. innerText属性](/chapter%2011.md#1-innerText属性)
+    - [2. outerText属性](/chapter%2011.md#2-outerText属性)
+  - [11.4.5 滚动](/chapter%2011.md#1145-滚动)
+</details>
+
