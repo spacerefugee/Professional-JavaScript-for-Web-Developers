@@ -309,7 +309,7 @@ JavaScript高级程序设计(第3版) 读书笔记
     - [1. innerHTML属性](/chapter%2011.md#1-innerHTML属性)
     - [2. outerHTML属性](/chapter%2011.md#2-outerHTML属性)
     - [3. insertAdjacentHTML()方法](/chapter%2011.md#3-insertAdjacentHTML方法)
-    - [4. 内存与性能问题](/chapter%2011.md#4. 内存与性能问题)
+    - [4. 内存与性能问题](/chapter%2011.md#4-内存与性能问题)
   - [11.3.7 scrollIntoView()方法](/chapter%2011.md#1137-scrollIntoView方法)
 - [11.4 专有扩展](/chapter%2011.md#114-专有扩展)
   - [11.4.1 文档模式](/chapter%2011.md#1141-文档模式)
